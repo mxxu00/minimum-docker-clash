@@ -27,7 +27,7 @@ source install.sh
 - 启动 `myclash`（Clash 核心，监听本地 `7890/9090`）与 `myclash_dashboard`（yacd 面板，映射至 `9091`）。
 - 在当前用户的 `~/.bashrc` 中写入 `proxy_on`、`proxy_off`、`clash_on`、`clash_off` 等常用 alias（若别名已存在则跳过）。
 
-访问面板：浏览器打开 `http://127.0.0.1:9091`，输入 `http://127.0.0.1:9090` 作为 Clash 控制端口即可管理节点与策略。
+访问面板：浏览器打开 `http://ip:9091`，输入 `http://ip:9090` 作为 Clash 控制端口即可管理节点与策略。
 
 ## 更新配置
 
