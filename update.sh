@@ -7,4 +7,4 @@ if docker ps -a --format '{{.Names}}' | grep -qw myclash; then
     docker rm -f myclash
 fi
 
-docker run -d --name myclash -v ./config:/root/.config/clash -p 65488:7890 -p 65489:9090 dreamacro/clash
+docker run -d --name myclash --restart always -v ./config:/root/.config/mihomo -p 65488:7890 -p 9090:9090 metacubex/mihomo
